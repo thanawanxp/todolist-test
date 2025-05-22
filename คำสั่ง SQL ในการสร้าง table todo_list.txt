@@ -1,0 +1,17 @@
+คำสั่งสร้าง Database MySQL
+
+Create Database todo-list-test
+
+USE todo_list_test;
+
+คำสั่งสร้าง Table 
+
+CREATE TABLE todo_list (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  task VARCHAR(255) NOT NULL,
+  completed TINYINT DEFAULT 0
+); 
+
+** completed ใช้ TINYINT เพื่อแทนค่า Boolean เพราะใน MySQL ไม่มี Boolean **
+
+
